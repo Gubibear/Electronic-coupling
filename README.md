@@ -17,7 +17,7 @@ To use the program, all you need is the output file from the ADC(2) problem in t
   
   tmexc istates=(a 1) fstates=(a 2-8) operators=diplen,dipvel
 
-
+Make sure that all of the required properties have been correctly calculated before using the code.
 
 The coupling-7.6.py script can be called with this command:
 
