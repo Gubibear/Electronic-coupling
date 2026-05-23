@@ -11,9 +11,11 @@ The program implements two approaches: the generalized Mulliken-Hush (GMH) appro
 
 To use the program, all you need is the output file from the ADC(2) problem in the TURBOMOLE 7.6 package. To calculate electronic coupling between two excited states, the output file must contain the components of the electric dipole moment of the system in these states and the components of the transition dipole moment between them. To ensure that ricc2 calculates these properties, the following lines should be included in the $excitations section of the control file:
 
-  spectrum  states=all  operators=xdiplen,ydiplen,zdiplen \\
-  exprop  states=all relaxed  operators=xdiplen,ydiplen,zdiplen \\
-  tmexc istates=(a 1) fstates=(a 2-8) operators=diplen,dipvel \\
+  spectrum  states=all  operators=xdiplen,ydiplen,zdiplen
+  
+  exprop  states=all relaxed  operators=xdiplen,ydiplen,zdiplen
+  
+  tmexc istates=(a 1) fstates=(a 2-8) operators=diplen,dipvel
 
 The coupling-7.6.py script can be called with this command:
 
